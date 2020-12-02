@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@500&display=swap');
+
+.body{
+    background-image: url("algorithm.jpg");
+    background-position: static;
+    background-size: 99%;
+}
+
+.chalkboard {
+    width: 30%;
+    margin-left: 34%;
+    border: 5px solid chocolate;
+    border-bottom: 20px solid sienna;
+    background-color: darkslategrey;
+    padding: 10px;
+    right-padding : 10%;
+    color: white;
+    font-family: 'Mali', cursive;
+    font-size: larger;
+}
