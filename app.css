@@ -13,6 +13,23 @@ body{
     border: none;
     font-family: 'Share Tech Mono', monospace;
     font-size : large;
+    webkit-appearance: none; 
+    margin: 0; 
+}
+
+#number:focus {
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
 }
 
 #calculate {
