@@ -47,8 +47,8 @@ function prime(number) {
       }  
       primeList = primeArray.join(", ")
 
-      document.getElementById("process").innerHTML = `There are ${totalPrimes} prime numbers between 1 and ${number} <br> ${primeList}`;
-      document.getElementById("totalValue").innerHTML = `Bonus: the sum of all above numbers = ${sum}`;
+      document.getElementById("process").innerHTML = `There are ${totalPrimes} prime numbers between 1 and ${number} <br> ${primeList}:`;
+      document.getElementById("totalValue").innerHTML = `Bonus: the sum of all numbers between 1 and ${number} is ${sum}.`;
     }
     
   }
