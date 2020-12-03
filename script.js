@@ -1,6 +1,7 @@
 let sum = 0;
 let primeArray = [2];
 let primeList;
+let totalPrimes = 0;
 
 document.getElementById("calculate").addEventListener("click", function(){
   sum = 0;
@@ -20,7 +21,7 @@ function calculate() {
 
 function prime(number) {
   
-  let rootNum = Math.floor(Math.sqrt(number)); /*as we don't need to divide a number by any number larger than its square root, this derives the
+  let rootNum = Math.sqrt(number); /*as we don't need to divide a number by any number larger than its square root, this derives the
           largest whole number that is smaller than the true square root of the given number*/
   
     if (number === 1){ //this tells the computer to do nothing in the case of specifically one
@@ -28,11 +29,12 @@ function prime(number) {
     }
     else if(number === 2) { //this tells the computer what to do in the instance of 2 specifically
       sum += number;
+      totalPrimes++;
     } 
    
     else{
       let ctr = 0; //the ctr will make sure the number is not divisible by any other numbers.  If another number will divide into it, ctr increments
-      for(let x = 2; x <= rootNum; x++) {
+      for(let x = 2; x <= rootNum; x++) { //rootNum is probably not an integer, but this doesn't matter for our purposes (the formula holds)
         if(number % x === 0) {
           ctr++
         }
@@ -40,12 +42,12 @@ function prime(number) {
       if (ctr === 0) { //if it stayed at zero, the number is prime and we can add it to the sum
         sum += number;
         primeArray.push(number);
+        totalPrimes++;
       }  
-      primeList = primeArray.join(" <br>+ ")
+      primeList = primeArray.join(", ")
 
-      document.getElementById("numericValue").innerHTML = sum;
-      document.getElementById("totalValue").innerHTML = `= ${sum}`;
-      document.getElementById("process").innerHTML = primeList;
+      document.getElementById("process").innerHTML = `There are ${totalPrimes} prime numbers between 1 and ${number} <br> ${primeList}`;
+      document.getElementById("totalValue").innerHTML = `Bonus: the sum of all above numbers = ${sum}`;
     }
     
   }

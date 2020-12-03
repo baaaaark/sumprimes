@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
-    <title>The sum of all primes: a prime number addition machine</title>
+    <title>Primebot 5000: The prime number finder of the future!</title>
 </head>
-<body>
-    <h1>The sum of all primes: A prime number adding algorithm</h1>
-    <p> Welcome to the prime number adder machine thingy!  
-        In the world of computing, prime numbers are extremely tricky as there is no simple equation for a computer to find one, but we can make a program to do this for smaller numbers.</p> 
-    <p> Type in a number and you will find out the sum of all prime numbers up to and including that number.  
-        Please note this takes quite a bit of computer power so I would use numbers less than 1,000 until further optimization is made (It will probably crash your browser window) :-).</p>
-    <input id="number" type="text">
+<body> <header class="header">
+    <div>
+    <h1>PRIMEBOT 5000</h1>
+    Primebot initialized... <br>
+        Welcome to Primebot.  The process of finding prime numbers is very CPU-intensive.  Primebot uses a special algorithm to speed up the process.<br>
+        Please note even with optimization Primebot has its limits.  Please use numbers less than 10,000 to maintain stability and prevent browser crashes<br>
+        >
+    <input id="number" type="number">
     <button id="calculate">Let's Go</button>
+    </div>
+    </header>
     <article id = "totalHTML">
-        The sum of all primes = 
         <span id="numericValue"></span><br></article>
     <article class="chalkboard">
-    Magic size-changing chalkboard:<br> 
+    <span id = "chalkboard"></span>
     <span id= "process"></span>
     <br><span id="totalValue"></span></article>
     <img src="" alt="">
