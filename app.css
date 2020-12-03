@@ -66,10 +66,9 @@ body{
 
 .logo{
     
-    text-align: right;
-    margin-right: 50px;
+    text-align: center;
     margin-left: 80%;
-    padding-right: 1%;
+    margin-right: 1%;
     font-family: "Exo", sans-serif;
     background: darkgrey;
     color: hsl(340, 100%, 35%);
