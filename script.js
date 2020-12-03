@@ -31,6 +31,8 @@ function prime(number) {
     else if(number === 2) { //this tells the computer what to do in the instance of 2 specifically
       sum += number;
       totalPrimes++;
+      document.getElementById("process").innerHTML = `2 is the only prime number between 1 and 2 <br>`;
+      document.getElementById("totalValue").innerHTML = `Fun Fact: Two is the only even prime number.`;
     } 
    
     else{
