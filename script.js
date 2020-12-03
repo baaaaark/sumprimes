@@ -6,6 +6,7 @@ let totalPrimes = 0;
 document.getElementById("calculate").addEventListener("click", function(){
   sum = 0;
   primeArray = [2];
+  totalPrimes = 0;
     calculate()
 })
 

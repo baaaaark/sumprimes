@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
-    <title>Primebot 5000: The prime number finder of the future!</title>
+    <title>Primebot 5000: The prime number finder</title>
 </head>
-<body> <header class="header">
-    <div>
-    <h1>PRIMEBOT 5000</h1>
-    Primebot initialized... <br>
-        Welcome to Primebot.  The process of finding prime numbers is very CPU-intensive.  Primebot uses a special algorithm to speed up the process.<br>
-        Please note even with optimization Primebot has its limits.  Please use numbers less than 10,000 to maintain stability and prevent browser crashes<br>
-        >
-    <input id="number" type="number">
-    <button id="calculate">Let's Go</button>
-    </div>
+<body> 
+    <header class ="header">
+        <article class="headerarticle">
+            <h1>PRIMEBOT 5000</h1>
+            Primebot initialized... <br>
+            Welcome to Primebot.  The process of finding prime numbers is very CPU-intensive.  Primebot uses a special algorithm to speed up the process.<br>
+            Enter your number below into the special Primebot terminal prompt, click the enter button and your results will print out on the size-adjusting blackboard below.
+            Note: even with optimization Primebot has its limits.  Please use numbers greater than two and less than 10,000 to maintain stability and prevent potential browser crashes.<br><br>
+            >
+            <input id="number" type="text" size="6">
+            <button id="calculate" >Enter</button>
+        </article>
+        <div id="spacing"></div> <h2 class="logo"> PRIMADORE 64 </h2>
     </header>
     <article id = "totalHTML">
-        <span id="numericValue"></span><br></article>
+        <br>
+    </article>
     <article class="chalkboard">
-    <span id = "chalkboard"></span>
-    <span id= "process"></span>
-    <br><span id="totalValue"></span></article>
-    <img src="" alt="">
+        <span id = "chalkboard"></span>
+        <span id= "process"></span>
+        <br><span id="totalValue"></span>
+    </article>
 </body>
 <script src="script.js"></script>
 </html>
